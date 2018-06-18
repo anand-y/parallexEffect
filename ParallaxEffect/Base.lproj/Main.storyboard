@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParallaxEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="afw-F7-sfh">
+                                <rect key="frame" x="-50" y="-30" width="514" height="816"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watermark" translatesAutoresizingMaskIntoConstraints="NO" id="Joq-dU-YLr">
+                                <rect key="frame" x="132" y="70" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8TE-an-BkP"/>
+                                    <constraint firstAttribute="height" constant="150" id="IEQ-hV-93z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="afw-F7-sfh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="3mG-Ja-Xvo"/>
+                            <constraint firstItem="afw-F7-sfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-50" id="FIx-D2-UcP"/>
+                            <constraint firstItem="Joq-dU-YLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QGG-wy-3lV"/>
+                            <constraint firstItem="Joq-dU-YLr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Wdt-9Q-B2B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="afw-F7-sfh" secondAttribute="bottom" constant="-50" id="i67-eo-rq0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afw-F7-sfh" secondAttribute="trailing" constant="-50" id="p06-xT-T7O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImg" destination="afw-F7-sfh" id="gYV-Xr-GaQ"/>
+                        <outlet property="logoImg" destination="Joq-dU-YLr" id="E6n-dg-8vK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="2560" height="1440"/>
+        <image name="Watermark" width="1024" height="1024"/>
+    </resources>
+</document>
